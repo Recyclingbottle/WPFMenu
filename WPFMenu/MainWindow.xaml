@@ -13,7 +13,7 @@
                     <MenuItem Header="프로젝트(_P)"/>
                     <MenuItem Header="파일(_F)"/>
                 </MenuItem>
-                <MenuItem Header="열기 (_O)">
+                <MenuItem Header="열기 (_O)" Command="Open">
                     <MenuItem.Icon>
                         <Image Source="images/Moon.png"/>
                     </MenuItem.Icon>
@@ -24,7 +24,7 @@
                 <MenuItem Header="녹색(_G)" x:Name="ItemGreen" Click="OnGreen"/>
                 <MenuItem Header="파란색(_B)" x:Name="ItemBlue" Click="OnBlue"/>
                 <Separator/>
-                <MenuItem Header="흰색(_W)" x:Name="ItemWhite" Click="OnWhite"/>
+                <MenuItem Header="흰색(_W)" x:Name="ItemWhite" Click="OnWhite" IsEnabled="False"/>
             </MenuItem>
         </Menu>
         <StackPanel x:Name="BackPanel"/>
